@@ -1,0 +1,39 @@
+.container {
+  min-height: 800px;
+}
+/* header */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex .flex-spacer {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  z-index: 2;
+  padding: 8px 16px;
+  align-items: center;
+}
+/* container */
+.container {
+  position: absolute;
+  top: 52px;
+  bottom: 52px;
+  left: 0;
+  right: 0;
+}
+/* sidenav */
+.sidenav {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background: rgba(255, 0, 0, 0.5);
+}
