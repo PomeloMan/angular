@@ -18,22 +18,19 @@
   right: 0;
   height: auto;
   z-index: 2;
-  padding: 8px 16px;
+  padding: 4px 16px;
   align-items: center;
 }
 /* container */
 .container {
   position: absolute;
-  top: 52px;
-  bottom: 52px;
+  top: 48px;
+  bottom: 0;
   left: 0;
   right: 0;
 }
 /* sidenav */
 .sidenav {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
-  width: 200px;
-  background: rgba(255, 0, 0, 0.5);
 }

@@ -9,6 +9,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 import { MainRoutingModule } from './main-routing.module';
 
@@ -27,7 +29,9 @@ import { UserService } from '../user/user.service';
         MatFormFieldModule,
         MatCheckboxModule,
         MatInputModule,
-        MatButtonModule
+        MatButtonModule,
+        MatListModule,
+        MatIconModule
     ],
     declarations: [MainComponent, LoginComponent],
     providers: [UserService]
