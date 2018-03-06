@@ -9,7 +9,7 @@ import { MainModule } from './main/main.module';
 
 import { AppComponent } from './app.component';
 
-import { StorageService } from './storage/storage.service';
+import { StorageService } from './service/storage.service';
 
 // {@link https://www.angular.cn/guide/ngmodule}
 @NgModule({

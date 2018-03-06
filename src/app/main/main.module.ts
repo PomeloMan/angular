@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -11,12 +12,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { MainRoutingModule } from './main-routing.module';
 
 import { MainComponent } from './main.component';
 import { LoginComponent } from '../login/login.component';
 import { UserService } from '../user/user.service';
+import { WindowService } from '../service/window.sevice';
 
 @NgModule({
     imports: [
@@ -31,9 +35,12 @@ import { UserService } from '../user/user.service';
         MatInputModule,
         MatButtonModule,
         MatListModule,
-        MatIconModule
+        MatIconModule,
+        MatTooltipModule,
+        MatMenuModule,
+        MatGridListModule
     ],
     declarations: [MainComponent, LoginComponent],
-    providers: [UserService]
+    providers: [UserService, WindowService]
 })
 export class MainModule { }
