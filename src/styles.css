@@ -9,4 +9,7 @@
 /* @import '~@angular/material/prebuilt-themes/pink-bluegrey.css'; */
 /* @import '~@angular/material/prebuilt-themes/purple-green.css'; */
 
-@import './assets/t.css';
+/* main */
+.theme-menu .mat-menu-content {
+    padding: 8px;
+}
