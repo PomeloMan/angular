@@ -9,6 +9,8 @@
 /* @import '~@angular/material/prebuilt-themes/pink-bluegrey.css'; */
 /* @import '~@angular/material/prebuilt-themes/purple-green.css'; */
 
+/* clndr */
+@import './assets/clndr/clndr.css';
 /* main */
 .theme-menu .mat-menu-content {
     padding: 8px;
