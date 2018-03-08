@@ -10,7 +10,7 @@
 /* @import '~@angular/material/prebuilt-themes/purple-green.css'; */
 
 /* clndr */
-@import './assets/clndr/clndr.css';
+@import './assets/angular-clndr/angular-clndr.css';
 /* main */
 .theme-menu .mat-menu-content {
     padding: 8px;

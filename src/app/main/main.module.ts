@@ -16,9 +16,12 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
 
 import { MainRoutingModule } from './main-routing.module';
+import { ClndrModule } from '../common/clndr/clndr.module'
 
 import { MainComponent } from './main.component';
 import { LoginComponent } from '../login/login.component';
+import { ClndrComponent } from '../common/clndr/clndr.component';
+
 import { UserService } from '../user/user.service';
 import { WindowService } from '../service/window.sevice';
 
@@ -38,7 +41,8 @@ import { WindowService } from '../service/window.sevice';
         MatIconModule,
         MatTooltipModule,
         MatMenuModule,
-        MatGridListModule
+        MatGridListModule,
+        ClndrModule
     ],
     declarations: [MainComponent, LoginComponent],
     providers: [UserService, WindowService]
