@@ -16,7 +16,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
 
 import { MainRoutingModule } from './main-routing.module';
-import { CalendarModule } from '../common/calendar/calendar.module'
+import { CalendarModule } from '../common/calendar/calendar.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 import { MainComponent } from './main.component';
 import { LoginComponent } from '../login/login.component';
@@ -42,7 +43,8 @@ import { WindowService } from '../service/window.sevice';
         MatTooltipModule,
         MatMenuModule,
         MatGridListModule,
-        CalendarModule
+        CalendarModule,
+        DashboardModule
     ],
     declarations: [MainComponent, LoginComponent],
     providers: [UserService, WindowService]

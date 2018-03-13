@@ -21,7 +21,6 @@
 
 /* container */
 .container {
-  min-height: 800px;
   position: absolute;
   top: 48px;
   bottom: 0;

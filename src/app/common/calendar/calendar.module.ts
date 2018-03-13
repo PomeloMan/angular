@@ -1,14 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CalendarContainer, CalendarController } from './calendar.directive';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
+import { MatCalendar, MatCalendarBody, MatCalendarCell, MatYearView, ɵa31, MatMonthView } from '@angular/material/datepicker';
 import { CalendarComponent } from './calendar.component';
 import { format } from 'url';
 
 @NgModule({
-    imports: [CommonModule],
-    declarations: [CalendarComponent, CalendarContainer, CalendarController],
-    exports: [CalendarComponent, CalendarContainer, CalendarController],
+    imports: [
+        CommonModule,
+        MatNativeDateModule,
+        MatToolbarModule,
+        MatGridListModule,
+        MatDividerModule,
+        MatDatepickerModule
+    ],
+    declarations: [CalendarComponent],
+    exports: [CalendarComponent],
     providers: []
 })
 export class CalendarModule { }

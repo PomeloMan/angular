@@ -5,29 +5,14 @@
     <span>Application Title</span>
     <!-- This fills the remaining space of the current row -->
     <span class="flex-spacer"></span>
-    <button mat-icon-button [matMenuTriggerFor]="themes">
+    <button mat-icon-button [matMenuTriggerFor]="ThemeMenu">
         <i class="material-icons">format_color_fill</i>
     </button>
-    <mat-menu #themes="matMenu" class="theme-menu">
+    <mat-menu #ThemeMenu="matMenu" class="theme-menu">
         <mat-grid-list cols="2" rowHeight="1:1">
-            <mat-grid-tile>
+            <mat-grid-tile *ngFor="let item of themes">
                 <button mat-menu-item class="theme-item">
-                    <mat-icon class="md-48" style="color: rgb(103, 58, 183)">lens</mat-icon>
-                </button>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <button mat-menu-item class="theme-item">
-                    <mat-icon class="md-48" style="color: rgb(63, 81, 181)">lens</mat-icon>
-                </button>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <button mat-menu-item class="theme-item">
-                    <mat-icon class="md-48" style="color: rgb(233, 30, 99)">lens</mat-icon>
-                </button>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <button mat-menu-item class="theme-item">
-                    <mat-icon class="md-48" style="color: rgb(156, 39, 176)">lens</mat-icon>
+                    <mat-icon class="md-48" [style.color]="item.color" (click)="setTheme(item.class)">lens</mat-icon>
                 </button>
             </mat-grid-tile>
         </mat-grid-list>
@@ -48,8 +33,6 @@
     <mat-sidenav-content>
         <router-outlet></router-outlet>
         <footer>
-            <calendar>
-            </calendar>
         </footer>
     </mat-sidenav-content>
 </mat-sidenav-container>

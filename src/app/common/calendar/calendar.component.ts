@@ -12,23 +12,26 @@ import * as moment from 'moment';
     templateUrl: './calendar.component.html',
     styleUrls: ['./calendar.component.css'],
 })
-export class CalendarComponent implements OnInit {
+export class CalendarComponent {
 
     window: any;
     options: CalendarOption = {
-        daysOfTheWeek: moment.weekdaysMin(),
-        days: null
+        weekdays: moment.weekdaysMin(),
+        days: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+        weeks: null
     };
 
     constructor(private win: WindowService) {
         this.window = win.nativeWindow;
     }
 
-    ngOnInit(): void {
+    getChangedValue($event): void {
+
     }
 }
 
 export interface CalendarOption {
-    daysOfTheWeek: any[]
+    weekdays: any[]
     days: any[]
+    weeks: number
 }
